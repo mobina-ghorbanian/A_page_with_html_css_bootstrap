@@ -1,0 +1,104 @@
+/* 
+----------------------- General Style------------------------
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+:root {
+    --primary-color: #FE5341;
+    --secondary-color: #2B2E33;
+}
+
+*:focus {
+    outline: none !important;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "fira code";
+    background-color: #fff;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+
+
+
+/* 
+----------------------- Vertical Navigation ------------------------
+*/
+
+.left-nav{
+    width: 80px;
+    height: 100vh;
+    display: flex;
+    position: fixed;
+    left: -15px;
+    flex-direction: column;
+    background-color: var(--secondary-color);
+    color: #4F4F51;
+    padding: 10px 8px;
+    text-align: center;
+    left: 0;
+}
+.left-nav li{ margin-bottom: 10px; }
+.bg-red{ background-color: var(--primary-color); border-radius:50%; position:relative; left:15px; top: 10px; }
+.custom-color{ color:var(--primary-color); }
+.left-border{ border-left: 2px solid var(--primary-color); }
+.left-nav div{ font-size: 12px; }
+.custom-icons{ font-size: 1.5em; font-weight: 200; }
+.custom-power-off{ color:var(--primary-color); }
+.atom{ margin-top: auto; }
+
+
+/* 
+----------------------- Top Navigation ------------------------
+*/
+.top-nav{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 10px 30px;
+    width: 95%;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 80px;
+    height: 80px;
+    background-color: #FCFCFA;
+    color: var(--secondary-color);
+}
+
+.btn-custom{ background-color: #FCFCFA; border:1px solid #999; border-radius:20px; }
+.red-reload{ background-color: var(--primary-color); color:#fff; padding:7px; border-radius: 50%;  position: relative; top: 10px;}
+
+.green-comment{ background-color: #ACCA4E; color:#fff; padding:7px; border-radius: 50%; position: relative; top: 10px;}
+
+
+/* 
+----------------------- Tabs ------------------------
+*/
+.wrap-custom{
+    position: relative;
+     top:80px; 
+     width: 100%;
+     z-index: -1;
+}
+
+.nav-link{ padding: 10px 30px; font-size: 14px; }
+.tabs-icon{ position: relative; top: 35px; left: 8px; font-weight: 100; color: #999; font-size: 18px;}
+.badge-custom{ background-color: var(--primary-color); color:#fff; }
+.list-g-left li{ padding: 15px 8px; }
+
+.mag-custom,
+.fa-check{ color: #dfdfdf; padding: 6px; border:1px solid #dfdfdf; border-radius:50%; margin-left:2px; }
